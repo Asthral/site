@@ -1,0 +1,166 @@
+:root {
+  --primary: #f37021;
+  --dark: #222;
+  --light: #f4f4f4;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--dark);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+
+.header {
+  background: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  background: var(--light);
+  padding: 80px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.mockup {
+  background: #ddd;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* ABOUT */
+
+.about {
+  padding: 80px 0;
+}
+
+.highlight {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* FEATURES */
+
+.features {
+  background: var(--light);
+  padding: 80px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* CONTACT */
+
+.contact {
+  padding: 80px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #222;
+  color: white;
+  padding: 50px 0;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.6;
+}
+
+/* BUTTON */
+
+.btn-primary {
+  background: var(--primary);
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
