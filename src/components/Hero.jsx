@@ -1,21 +1,23 @@
+import illu1 from "../assets/illustration-2.png";
+
 export default function Hero() {
   return (
     <section className="hero">
       <div className="container hero-grid">
         <div>
-          <h1>Simplifiez, fluidifiez</h1>
-          <h2>
-            L'utilisateur final est la clé, il doit trouver immédiatement son
-            processus
-          </h2>
+          <h1>Créez des fiches réflexes et simplifiez l'accès à vos processus</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Représentez
-            vos processus sous forme de parcours intuitifs.
+            Parcours est une application intuitive, une boîte à outils qui vous
+            permet de créer des fiches réflexes.
           </p>
-          <button className="btn-primary">Testez notre application</button>
+          <p>
+            Vos documents, processus métier restent inchangés,
+            mais ils deviennent accessibles à tous les utilisateurs.
+          </p>
+          <button className="btn-primary">Testez l'application</button>
         </div>
 
-        <div className="mockup"></div>
+        <img src={illu1} alt="Illustration Parcours" />
       </div>
     </section>
   );
