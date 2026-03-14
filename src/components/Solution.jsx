@@ -1,24 +1,46 @@
-import illu2 from "../assets/illustration-1.png";
+import { styled } from "@mui/material/styles";
+import illu from "../assets/illustration-1.png";
+
+const Section = styled("section")`
+  padding: 80px 0;
+`;
+
+const Grid = styled("div")`
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+`;
 
 export default function Solution() {
   return (
-    <section className="section" id="solution">
-      <div className="container grid-2">
-        <img src={illu2} alt="Arborescence processus" />
+
+    <Section id="solution">
+
+      <Grid>
+
+        <img src={illu} />
 
         <div>
+
           <h2>Représentez vos processus simplement</h2>
+
           <p>
             Parcours permet de représenter vos processus sous forme
-            d'arborescences simples découpées en étapes,
-            modifiables en quelques clics.
+            d'arborescences simples découpées en étapes.
           </p>
 
           <p>
-            Il s'insère dans votre intranet via un simple lien.
+            Les parcours sont modifiables en quelques clics et
+            s'intègrent directement dans votre intranet.
           </p>
+
         </div>
-      </div>
-    </section>
+
+      </Grid>
+
+    </Section>
   );
 }

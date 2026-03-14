@@ -1,12 +1,27 @@
+import { styled } from "@mui/material/styles";
+
+const FooterContainer = styled("footer")`
+  background: #222;
+  color: white;
+  padding: 40px;
+  text-align: center;
+`;
+
 export default function Footer() {
+
   return (
-    <footer className="footer">
-      <div className="container">
-        <h3>Parcours</h3>
-        <p>contact@parcours.io</p>
-        <p>17 rue Plantin, 37000 Tours</p>
-        <div className="copy">© 2026 Parcours</div>
-      </div>
-    </footer>
+
+    <FooterContainer>
+
+      <h3>Parcours</h3>
+
+      <p>contact@parcours.io</p>
+
+      <p>17 rue Plantin — 37000 Tours</p>
+
+      <p>© 2026 Parcours</p>
+
+    </FooterContainer>
+
   );
 }

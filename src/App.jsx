@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Problem from "./components/Problem";
 import Solution from "./components/Solution";
 import Value from "./components/Value";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Problem />
       <Solution />
       <Value />
+      <Contact />
       <Footer />
     </>
   );
